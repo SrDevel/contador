@@ -52,7 +52,7 @@ export function Main() {
     return (
         <View style={styles.container}>
             <Animated.Text style={[styles.counterText, { transform: [{ scale: scaleAnim }], opacity: fadeAnim }]}>
-                { clicks === 0 ? 'No me has tocado aún 😢' : `Me has tocado ${clicks} vez${clicks > 1 ? 'es' : ''} 😈` }
+                { clicks === 0 ? 'No me has tocado aún 😢' : `Me has tocado ${clicks} ${clicks > 1 ? 'veces' : 'vez'} 😈` }
             </Animated.Text>
             <AnimatedButton
                 onPress={handlePress} 
